@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const crval=Object.values(datacr);
       const fi=document.querySelector('#final')
       fi.textContent(crval[1]);
-      console.log(datacr);
+      console.log(crval[1]);
     } catch {
       console.log("an error ocurred");
     }
