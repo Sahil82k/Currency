@@ -1,0 +1,25 @@
+.pclr
+{
+ background-color: gold;
+ margin: 20px auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-direction: column;
+ border-color:#ffffff ;
+ border-width: 5px;
+ color: navy;
+}
+
+.sbtn{
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.sbtn:hover{
+    background-color: gold;
+    color: navy;
+    border-color: navy;
+    transform: scale(1.1);
+    transition: 0.7s ease-in-out all;
+}
