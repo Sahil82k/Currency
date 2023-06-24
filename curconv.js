@@ -11,15 +11,16 @@ document.addEventListener("DOMContentLoaded", () => {
       "/" +
       crtwo +
       ".json";
+      let datacr
     try {
       const convdata = await fetch(urlconv);
-      const datacr = await convdata.json();
-      const crval=Object.values(datacr);
-      const fi=document.querySelector('#final')
-      fi.textContent(crval[1]);
-      console.log(datacr);
+       datacr = await convdata.json();
     } catch {
       console.log("an error ocurred");
     }
+      const crval=Object.values(datacr);
+      let final=crval[1];
+      const fi=document.querySelector('#final')
+      fi.textContent=final;
   });
 });
