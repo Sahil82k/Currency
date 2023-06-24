@@ -14,7 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
       let datacr
     try {
       const convdata = await fetch(urlconv);
+<<<<<<< HEAD
        datacr = await convdata.json();
+=======
+      const datacr = await convdata.json();
+      const crval=Object.values(datacr);
+      const fi=document.querySelector('#final')
+      fi.textContent(crval[1]);
+      console.log(crval[1]);
+>>>>>>> 36540781f138371e3b9e40e39cb8f7fff7a68d31
     } catch {
       console.log("an error ocurred");
     }
